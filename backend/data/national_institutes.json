@@ -1,0 +1,175 @@
+{
+  "updated_at": "2026-01-12",
+  "sources": {
+    "nst": "https://www.nst.re.kr/www/contents.do?key=20",
+    "nrc": "https://www.nrc.re.kr/menu.es?mid=a12006000000"
+  },
+  "nst": [
+    {
+      "name": "한국과학기술연구원",
+      "affiliated": false,
+      "desc": "국가 과학기술을 선도하는 창조적 원천기술 연구개발 및 성과보급",
+      "url": "https://www.kist.re.kr"
+    },
+    {
+      "name": "국가녹색기술연구소",
+      "affiliated": true,
+      "desc": "녹색기술 연구개발 정책수립, 관련 국가간 연계·협력 등을 지원",
+      "url": "https://www.nigt.re.kr"
+    },
+    {
+      "name": "한국기초과학지원연구원",
+      "affiliated": false,
+      "desc": "연구시설·장비, 분석과학기술 관련 연구개발 및 연구지원",
+      "url": "https://www.kbsi.re.kr"
+    },
+    {
+      "name": "한국생명공학연구원",
+      "affiliated": false,
+      "desc": "생명과학기술 분야의 연구개발 및 공공인프라 구축·운영",
+      "url": "https://www.kribb.re.kr"
+    },
+    {
+      "name": "한국과학기술정보연구원",
+      "affiliated": false,
+      "desc": "국가 과학·기술 정보 분야의 전문 연구기관",
+      "url": "https://www.kisti.re.kr"
+    },
+    {
+      "name": "한국한의학연구원",
+      "affiliated": false,
+      "desc": "한의학 이론 및 기술, 한의의료행위 등에 대한 연구개발 및 성과확산",
+      "url": "https://www.kiom.re.kr"
+    },
+    {
+      "name": "한국생산기술연구원",
+      "affiliated": false,
+      "desc": "생산기술 분야의 산업원천 기술개발 및 실용화, 중소·중견기업의 기술지원 및 성과확산",
+      "url": "https://www.kitech.re.kr"
+    },
+    {
+      "name": "한국전자통신연구원",
+      "affiliated": false,
+      "desc": "정보, 통신, 전자, 방송 및 관련 융·복합 기술분야의 산업원천기술 개발 및 성과확산",
+      "url": "https://www.etri.re.kr"
+    },
+    {
+      "name": "국가보안기술연구소",
+      "affiliated": true,
+      "desc": "국가 사이버안전 대응기술 등 21C 汎 국가차원의 정보보안기술 개발",
+      "url": null
+    },
+    {
+      "name": "한국건설기술연구원",
+      "affiliated": false,
+      "desc": "건설 및 국토관리 분야의 원천기술 개발 및 성과확산",
+      "url": "https://www.kict.re.kr"
+    },
+    {
+      "name": "한국철도기술연구원",
+      "affiliated": false,
+      "desc": "철도, 대중교통, 물류 등 공공교통 분야의 연구개발 및 성과확산",
+      "url": "https://www.krri.re.kr"
+    },
+    {
+      "name": "한국표준과학연구원",
+      "affiliated": false,
+      "desc": "국가 표준제도의 확립 및 이와 관련된 연구개발, 성과보급",
+      "url": "https://www.kriss.re.kr"
+    },
+    {
+      "name": "한국식품연구원",
+      "affiliated": false,
+      "desc": "식품분야의 연구개발, 성과확산 및 기술지원",
+      "url": "https://www.kfri.re.kr"
+    },
+    {
+      "name": "세계김치연구소",
+      "affiliated": true,
+      "desc": "김치 관련 분야의 연구개발 및 성과확산",
+      "url": "https://www.wikim.re.kr"
+    },
+    {
+      "name": "한국지질자원연구원",
+      "affiliated": false,
+      "desc": "국내외 육상·해저 지질조사, 지하자원의 탐사·개발·활용, 지질재해 및 지구환경변화 대응 연구개발 및 성과확산",
+      "url": "https://www.kigam.re.kr"
+    },
+    {
+      "name": "한국기계연구원",
+      "affiliated": false,
+      "desc": "기계분야의 연구개발, 성과확산, 신뢰성평가 지원",
+      "url": "https://www.kimm.re.kr"
+    },
+    {
+      "name": "한국에너지기술연구원",
+      "affiliated": false,
+      "desc": "에너지기술 분야의 연구개발 및 성과확산",
+      "url": "https://www.kier.re.kr"
+    },
+    {
+      "name": "한국전기연구원",
+      "affiliated": false,
+      "desc": "전력 및 전기 관련 산업 원천기술 개발 및 성과확산, 시험·인증 서비스 제공",
+      "url": "https://www.keri.re.kr"
+    },
+    {
+      "name": "한국화학연구원",
+      "affiliated": false,
+      "desc": "화학 및 관련 융·복합 기술 연구개발, 공공인프라 서비스 지원",
+      "url": "https://www.krict.re.kr"
+    },
+    {
+      "name": "국가독성과학연구소",
+      "affiliated": true,
+      "desc": "화학·바이오 등 각종 물질에 대한 안전성평가연구 및 관련 기술개발",
+      "url": "https://www.kitox.re.kr"
+    },
+    {
+      "name": "한국원자력연구원",
+      "affiliated": false,
+      "desc": "원자력기술 분야의 연구개발 및 성과보급",
+      "url": "https://www.kaeri.re.kr"
+    },
+    {
+      "name": "한국재료연구원",
+      "affiliated": false,
+      "desc": "소재분야의 산업원천기술 개발 및 성과확산, 시험평가지원",
+      "url": "https://www.kims.re.kr"
+    },
+    {
+      "name": "한국핵융합에너지연구원",
+      "affiliated": false,
+      "desc": "핵융합 에너지 분야의 새로운 탐구, 연구개발 및 성과보급",
+      "url": "https://www.kfe.re.kr"
+    }
+  ],
+  "nrc": [
+    {"name": "과학기술정책연구원", "url": "https://www.stepi.re.kr"},
+    {"name": "국토연구원", "url": "https://www.krihs.re.kr"},
+    {"name": "대외경제정책연구원", "url": "https://www.kiep.go.kr"},
+    {"name": "산업연구원", "url": "https://www.kiet.re.kr"},
+    {"name": "에너지경제연구원", "url": "https://www.keei.re.kr"},
+    {"name": "정보통신정책연구원", "url": "https://www.kisdi.re.kr"},
+    {"name": "통일연구원", "url": "https://www.kinu.or.kr"},
+    {"name": "한국개발연구원", "url": "https://www.kdi.re.kr"},
+    {"name": "한국교육개발원", "url": "https://www.kedi.re.kr"},
+    {"name": "한국교육과정평가원", "url": "https://www.kice.re.kr"},
+    {"name": "한국교통연구원", "url": "https://www.koti.re.kr"},
+    {"name": "한국노동연구원", "url": "https://www.kli.re.kr"},
+    {"name": "한국농촌경제연구원", "url": "https://www.krei.re.kr"},
+    {"name": "한국법제연구원", "url": "https://www.klri.re.kr"},
+    {"name": "한국보건사회연구원", "url": "https://www.kihasa.re.kr"},
+    {"name": "한국여성정책연구원", "url": "https://www.kwdi.re.kr"},
+    {"name": "한국조세재정연구원", "url": "https://www.kipf.re.kr"},
+    {"name": "한국직업능력연구원", "url": "https://www.krivet.re.kr"},
+    {"name": "한국청소년정책연구원", "url": "https://www.nypi.re.kr"},
+    {"name": "한국해양수산개발원", "url": "https://www.kmi.re.kr"},
+    {"name": "한국행정연구원", "url": "https://www.kipa.re.kr"},
+    {"name": "한국형사·법무정책연구원", "url": "https://www.kicj.re.kr"},
+    {"name": "한국환경연구원", "url": "https://www.kei.re.kr"},
+    {"name": "건축공간연구원", "url": "https://www.auri.re.kr"},
+    {"name": "KDI국제정책대학원", "url": "https://www.kdischool.ac.kr"},
+    {"name": "육아정책연구소", "url": "https://www.kicce.re.kr"}
+  ]
+}

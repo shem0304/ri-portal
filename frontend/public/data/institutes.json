@@ -1,0 +1,82 @@
+[
+  {
+    "name": "서울연구원",
+    "region": "서울",
+    "url": "https://www.si.re.kr/"
+  },
+  {
+    "name": "경기연구원",
+    "region": "경기",
+    "url": "https://www.gri.re.kr/"
+  },
+  {
+    "name": "인천연구원",
+    "region": "인천",
+    "url": "https://www.ii.re.kr/"
+  },
+  {
+    "name": "대구정책연구원",
+    "region": "대구",
+    "url": "https://dpi.re.kr/"
+  },
+  {
+    "name": "부산연구원",
+    "region": "부산",
+    "url": "https://bdi.re.kr/"
+  },
+  {
+    "name": "울산연구원",
+    "region": "울산",
+    "url": "https://www.uri.re.kr/"
+  },
+  {
+    "name": "광주연구원",
+    "region": "광주",
+    "url": "https://gji.re.kr/"
+  },
+  {
+    "name": "대전세종연구원",
+    "region": "대전·세종",
+    "url": "https://www.dsi.re.kr/"
+  },
+  {
+    "name": "충북연구원",
+    "region": "충북",
+    "url": "https://www.cri.re.kr/"
+  },
+  {
+    "name": "충남연구원",
+    "region": "충남",
+    "url": "https://www.cni.re.kr/"
+  },
+  {
+    "name": "강원연구원",
+    "region": "강원",
+    "url": "https://www.gi.re.kr/"
+  },
+  {
+    "name": "전북연구원",
+    "region": "전북",
+    "url": "https://www.jthink.kr/"
+  },
+  {
+    "name": "전남연구원",
+    "region": "전남",
+    "url": "https://www.jni.re.kr/"
+  },
+  {
+    "name": "경북연구원",
+    "region": "경북",
+    "url": "https://gdi.re.kr/"
+  },
+  {
+    "name": "경남연구원",
+    "region": "경남",
+    "url": "https://www.gni.re.kr/"
+  },
+  {
+    "name": "제주연구원",
+    "region": "제주",
+    "url": "https://www.jri.re.kr/"
+  }
+]

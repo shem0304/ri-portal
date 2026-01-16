@@ -1,11 +1,14 @@
 import React from 'react';
-import { NavLink, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, Route, Routes, useLocation } from 'react-router-dom';
 
-import { getAuthStatus } from './api/client';
+import { getAuthStatus, isStaticMode } from './api/client';
 import { ToastProvider, useToast } from './components/Toast';
 import InstitutesPage from './pages/InstitutesPage';
 import ReportsPage from './pages/ReportsPage';
 import TrendsPage from './pages/TrendsPage';
+
+const BASE = import.meta.env.BASE_URL;
+const STATIC = isStaticMode();
 
 function Header() {
   const [theme, setTheme] = React.useState<string>(() => {
@@ -37,10 +40,13 @@ function Header() {
   return (
     <header className="topbar">
       <div className="brand">
-        <img src="./logo-sheep-64.png" alt="logo" width={28} height={28} style={{ borderRadius: 10 }} />
+        {/* 라우트가 /reports 같은 하위 경로여도 깨지지 않게 BASE_URL 사용 */}
+        <img src={`${BASE}logo-sheep-64.png`} alt="logo" width={28} height={28} style={{ borderRadius: 10 }} />
         <div>
           <div className="brand-title">지역연구원 통합 포털</div>
-          <div className="brand-sub">React UI (기존 PHP API 연동)</div>
+          <div className="brand-sub">
+            {STATIC ? 'React UI (GitHub Pages: 정적 데이터 모드)' : 'React UI (기존 PHP API 연동)'}
+          </div>
         </div>
       </div>
 
@@ -48,9 +54,11 @@ function Header() {
         <button className="btn" type="button" onClick={toggle} aria-label="theme">
           {theme === 'light' ? '🌙' : '☀️'}
         </button>
-        <a className="btn" href="./download.php" target="_blank" rel="noreferrer">
-          ZIP
-        </a>
+        {!STATIC && (
+          <a className="btn" href="./download.php" target="_blank" rel="noreferrer">
+            ZIP
+          </a>
+        )}
       </div>
     </header>
   );
@@ -73,9 +81,11 @@ function Nav() {
 }
 
 function RequireLoginGate({ children }: { children: React.ReactNode }) {
-  const nav = useNavigate();
   const loc = useLocation();
   const toast = useToast();
+
+  // GitHub Pages(정적 호스팅)에서는 PHP 세션/로그인이 없으므로 게이트를 비활성화
+  if (STATIC) return <>{children}</>;
 
   React.useEffect(() => {
     let ok = false;
@@ -95,7 +105,7 @@ function RequireLoginGate({ children }: { children: React.ReactNode }) {
     return () => {
       if (!ok) return;
     };
-  }, [loc.pathname, loc.search, nav, toast]);
+  }, [loc.pathname, loc.search, toast]);
 
   return <>{children}</>;
 }

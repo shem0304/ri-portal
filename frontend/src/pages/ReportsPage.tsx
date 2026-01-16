@@ -1,5 +1,5 @@
 import React from 'react';
-import { getReports, getInstitutes, saveReports, Report, Institute } from '../api/client';
+import { getReports, getInstitutes, saveReports, Report, Institute, isStaticMode } from '../api/client';
 import { useToast } from '../components/Toast';
 
 type SortMode = 'newest' | 'oldest' | 'title';
@@ -73,6 +73,7 @@ function parseImport(text: string): Report[] {
 
 export default function ReportsPage() {
   const toast = useToast();
+  const STATIC = isStaticMode();
 
   const [reports, setReports] = React.useState<Report[]>([]);
   const [institutes, setInstitutes] = React.useState<Institute[]>([]);
@@ -100,8 +101,10 @@ export default function ReportsPage() {
       .catch((e: any) => {
         if (e?.code === 401) {
           toast.show('로그인 후 이용 가능합니다.');
-          const ret = '/react/reports';
-          window.location.href = `./login.php?return=${encodeURIComponent(ret)}`;
+          if (!STATIC) {
+            const ret = '/react/reports';
+            window.location.href = `./login.php?return=${encodeURIComponent(ret)}`;
+          }
           return;
         }
         toast.show('보고서 목록을 불러오지 못했습니다.');
@@ -161,6 +164,11 @@ export default function ReportsPage() {
   }, [q, inst, year, sort]);
 
   const applyImport = async () => {
+    if (STATIC) {
+      toast.show('GitHub Pages(정적 호스팅)에서는 가져오기/저장 기능을 사용할 수 없습니다.');
+      return;
+    }
+
     try {
       const parsed = parseImport(importText);
       if (parsed.length === 0) {
@@ -245,10 +253,12 @@ export default function ReportsPage() {
             >
               초기화
             </button>
-            <button className="btn" type="button" onClick={() => setImportOpen(true)}>
-              가져오기
-            </button>
-          </div>
+            {!STATIC && (
+              <button className="btn" type="button" onClick={() => setImportOpen(true)}>
+                가져오기
+              </button>
+            )}
+            </div>
         </div>
 
         <div className="muted" style={{ marginTop: 8 }}>

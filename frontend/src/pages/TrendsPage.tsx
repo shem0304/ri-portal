@@ -13,7 +13,7 @@ import {
   Filler,
 } from 'chart.js';
 
-import { getReports, Report } from '../api/client';
+import { getReports, Report, isStaticMode } from '../api/client';
 import { useToast } from '../components/Toast';
 import { WordCloud } from '../components/trends/WordCloud';
 import { CoocNetwork, CoocLink, CoocNode } from '../components/trends/CoocNetwork';
@@ -159,6 +159,7 @@ function downloadText(filename: string, content: string, mime = 'text/plain;char
 
 export default function TrendsPage() {
   const toast = useToast();
+  const STATIC = isStaticMode();
   const [reports, setReports] = React.useState<Report[]>([]);
   const [loading, setLoading] = React.useState(true);
 
@@ -182,7 +183,9 @@ export default function TrendsPage() {
       .catch((e: any) => {
         if (e?.code === 401) {
           toast.show('로그인 후 이용 가능합니다.');
-          window.location.href = `./login.php?return=${encodeURIComponent('/react/trends')}`;
+          if (!STATIC) {
+            window.location.href = `./login.php?return=${encodeURIComponent('/react/trends')}`;
+          }
           return;
         }
         toast.show('트렌드 데이터를 불러오지 못했습니다.');

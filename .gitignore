@@ -1,0 +1,19 @@
+# Node
+node_modules/
+frontend/node_modules/
+frontend/node_modules/.cache/
+frontend/.vite/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backend cache/debug (원하면 조정)
+backend/data/cache_*.json
+backend/data/*debug*.json
+backend/data/last_*_debug.json

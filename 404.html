@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404</title>
+    <script>
+      (function () {
+        // GitHub Pages(Project Pages)에서 /<repo>/ 하위 라우팅을 새로고침하면 404가 나기 쉬워서,
+        // 원래 경로를 query로 옮겨 index.html에서 복구합니다.
+        var l = window.location;
+        var repo = '/ri-portal';
+
+        var path = l.pathname;
+        if (path.indexOf(repo) === 0) path = path.slice(repo.length);
+        path = path.replace(/^\//, '');
+
+        var newUrl = repo + '/?/' + path;
+        if (l.search) newUrl += l.search.replace(/&/g, '~and~');
+        if (l.hash) newUrl += l.hash;
+
+        l.replace(l.origin + newUrl);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지역연구원 통합 포털 (React)</title>
+    <script>
+      (function (l) {
+        if (l.search && l.search.length > 1 && l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, null, l.pathname + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+    <script type="module" crossorigin src="/ri-portal/assets/index-COdLxF2h.js"></script>
+    <link rel="stylesheet" crossorigin href="/ri-portal/assets/index-CbBP0mH8.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
